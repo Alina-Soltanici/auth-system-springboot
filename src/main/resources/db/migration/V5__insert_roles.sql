@@ -1,0 +1,5 @@
+INSERT INTO auth.roles(name)
+VALUES
+('ADMIN'),
+('USER')
+ON CONFLICT (name) DO NOTHING;
